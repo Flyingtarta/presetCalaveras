@@ -1,0 +1,66 @@
+/*Titulo de la mision y demas*/
+
+onLoadIntro = "Mensaje mientras se carga la intro de la mision";
+OnLoadName		= "Nombre de la mision";
+OnLoadMission	= "";
+loadScreen		= "img\logo.jpg";
+briefingName = "Nombre que se ve en el briefing";
+
+/*------------------ no toquen nada de aca abajo si no saben que es ----------------*/
+
+
+class CfgFunctions {
+	#include "fncs\functions.hpp"
+};
+
+//Detalles de mision
+class Header
+{
+	gameType =  Coop;
+	minPlayers =  1;
+	maxPlayers = 100;
+};
+//Debug
+enableDebugConsole = 0; // si quieren tener la debug console
+//Respawn
+respawn = "BASE";
+respawnButton = 0;
+respawnDelay = 10;
+respawnOnStart = -1;
+respawnTemplates[] = { "Counter", "MenuPosition", "Tickets" };
+
+//Manejo de cuerpos y vehiculos destruidos
+corpseManagerMode = 3;
+corpseLimit = 15;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 600;
+
+wreckManagerMode = 1;
+wreckLimit = 5;
+wreckRemovalMinTime = 300;
+wreckRemovalMaxTime = 1800;
+
+minPlayerDistance = 200;
+
+//IA
+disabledAI = 1;
+
+//Sonidos
+class CfgSounds
+{
+	sounds[] = {};
+	class slaves
+	{
+		name = "slaves";
+		sound[] = { "sounds\slaves.ogg", 1, 1 };
+		titles[] = {};
+	};
+	/* si quieren mas sonidos copian lo de abajo, con la ruta y nombre del sonido
+	class slaves
+	{
+		name = "slaves";
+		sound[] = { "sounds\slaves.ogg", 1, 1 };
+		titles[] = {};
+	};
+	*/
+};
