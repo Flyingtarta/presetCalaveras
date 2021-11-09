@@ -22,7 +22,7 @@ if(speed _target != 0 || (isEngineOn _target)) then{
 	}else{
 		_target setFuel 0;
 		_target lockDriver true;
-		0 remoteExecCall ["hint", -2, "some_JIP_ID"]; 
+		0 remoteExecCall ["hint", -2, "some_JIP_ID"];
 	};
 
 	//A seguir...

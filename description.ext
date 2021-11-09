@@ -43,7 +43,7 @@ wreckRemovalMaxTime = 1800;
 minPlayerDistance = 200;
 
 //IA
-disabledAI = 1;
+disabledAI = 0;
 
 //Sonidos
 class CfgSounds
@@ -63,4 +63,21 @@ class CfgSounds
 		titles[] = {};
 	};
 	*/
+};
+
+class params {
+  class Vidas
+  {
+    Title = "Cantidad de reapariciones por persona";
+    texts[] = {"ninguna","1","2","3","5","Sin limite"};
+    values[] = {0,1,2,3,5,-100};
+    default = 1;
+  };
+
+	class refuerzoMinimo {
+		Title = "Cantidad Minima del Refuerzo";
+		texts[] = {"2","3","4","5"};
+		values[]= {2,3,4,5};
+		default =2;
+	};
 };
