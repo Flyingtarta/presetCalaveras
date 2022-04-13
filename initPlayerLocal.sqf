@@ -1,6 +1,8 @@
 //previene que no cambie los loadouts
 player setVariable ["BIS_enableRandomization", false];
 
+waituntil {time > 2};
+
 if !(isnil "box") then {
 	[box] call clv_fnc_cargarCaja;
 };

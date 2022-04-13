@@ -8,5 +8,6 @@ class CLV
 	};
 	#include "common\fnc_common.hpp"
 	#include "Rallypoint\rallyPoint.hpp"
-
+	#include "LifeLimit\LL_fncs.hpp"
+	#include "RoleBox\RB_fnc.hpp"
 };

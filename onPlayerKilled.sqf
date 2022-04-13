@@ -1,3 +1,6 @@
+//[] call clv_fnc_LL_OnKilled; //limite de vidas
+
+/*
 private _uid = getPlayerUID player;
 
 [_uid,
@@ -11,3 +14,4 @@ private _uid = getPlayerUID player;
     array_jugadores set [_idx,[_this,_vidas]];
   };
 }]remoteexec ["call",2];
+*/

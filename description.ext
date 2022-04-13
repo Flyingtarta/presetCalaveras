@@ -12,7 +12,7 @@ briefingName = "Nombre que se ve en el briefing";
 class CfgFunctions {
 	#include "fncs\functions.hpp"
 };
-
+/*
 //Detalles de mision
 class Header
 {
@@ -21,14 +21,15 @@ class Header
 	maxPlayers = 100;
 };
 //Debug
-enableDebugConsole = 0; // si quieren tener la debug console
+enableDebugConsole = 1; // si quieren tener la debug console
 //Respawn
+
 respawn = "BASE";
 respawnButton = 0;
 respawnDelay = 10;
-respawnOnStart = -1;
 respawnTemplates[] = { "Counter", "MenuPosition", "Tickets" };
-
+*/
+respawnOnStart = -1;
 //Manejo de cuerpos y vehiculos destruidos
 corpseManagerMode = 3;
 corpseLimit = 15;
@@ -66,7 +67,7 @@ class CfgSounds
 };
 
 class params {
-  class Vidas
+  class respawns
   {
     Title = "Cantidad de reapariciones por persona";
     texts[] = {"ninguna","1","2","3","5","Sin limite"};
